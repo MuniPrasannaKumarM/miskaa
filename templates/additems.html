@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title> ADD ITEMS</title>
+        <style>
+            fieldset{padding:200px 300px;}
+            input[type],button
+        {
+                width:50% ;
+                padding:15px 20px;
+                margin:0px 0;
+                border: 1px solid black;
+                display: inline-block;
+                border-radius: 4px;
+                box-sizing: border-box;
+        }
+        </style>
+        <script>
+            function close1()
+        {
+            if(confirm("Close?"))
+            {
+                window.close();
+            }
+        }
+        </script>
+    </head>
+    <body>
+    <form method="post" style="padding:50px">
+        <center> <input type="text" name="itemadd" ><br><br>
+            <input type="submit" name="ADD" value="ADD"><br><br>
+            <button type="button" onclick="close1()" value="CLOSE">CLOSE</button></center>
+            </form>
+    </body>
+</html>

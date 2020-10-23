@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <script >
+        function addi()
+        {
+            var openwind = window.open("http://127.0.0.1:5000/additems", "_blank","top=200,left=400,width=600,height=400");
+            return false;
+        }
+        function removei()
+        {
+            var openwind = window.open("http://127.0.0.1:5000/removeitems", "_blank","top=200,left=400,width=600,height=400");
+            return false;
+        }
+    </script>
+    <style>
+        input[type]
+        {
+                width:50% ;
+                padding:15px 20px;
+                margin:0px 0;
+                border: 1px solid black;
+                display: inline-block;
+                border-radius: 4px;
+                box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" style="padding:150px;">
+        <center><input type="submit" name="additems" value="ADD ITEMS" onclick="addi()"></center><br><br>
+        <center><input type="submit" name="getitems" value="GET ITEMS" onclick="geti()"></center><br><br>
+        <center><input type="submit" name="removeitems" value="REMOVE ITEMS" onclick="removei()"></center><br><br>
+    </form>
+</body>
+</html>

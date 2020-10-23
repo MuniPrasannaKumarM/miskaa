@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GET ITEMS</title>
+    <script>
+        function backbutton()
+        {
+            window.open("http://127.0.0.1:5000/", "_self");
+        }
+    </script>
+    <style>
+        td
+        {
+              height: 40px;
+              vertical-align: center;
+        }
+        button
+        {
+                width:50% ;
+                padding:15px 20px;
+                margin:20px 275px;
+                border: 1px solid black;
+                display: inline-block;
+                border-radius: 4px;
+                box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+        <center><h1>{{user}}</h1></center>
+        <h2><center>LIST</center></h2>
+        <table border="1px" align="center" style="">
+        {% for i in range (0,length1) %}
+           <tr> <td>{{list2[i]}}</td></tr>
+        {% endfor %}
+        </table>
+        <button type="button" name="buttonback" onclick="backbutton()">BACK</button>
+</body>
+</html>
